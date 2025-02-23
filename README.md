@@ -10,6 +10,10 @@ This is an advanced Django Rest Framework (DRF) project showcasing key API funct
 - ✅ `ViewSets` and `Routers` for cleaner API structure
 - ✅ Token-based authentication for secure API interactions 🔐
 - ✅ Custom permissions to enhance security and user control 🛡️
+- ✅ Pagination: Only 5 articles per page for better performance 📄
+- ✅ Filtering: Filter articles by title 🔍
+- ✅ Searching: Search articles by title and content 🔎
+- ✅ Ordering: Sort articles by title or creation date 📊
 
 ## Installation 🛠️
 1. Clone the repository:
@@ -55,6 +59,9 @@ This project uses JWT authentication for secure access control.
 - `GET /api/articles/{id}/` - Retrieve a single article 🔍
 - `PUT /api/articles/{id}/` - Update an article (only the owner can edit) 📝
 - `DELETE /api/articles/{id}/` - Delete an article (only the owner can remove) ❌
+- `GET /api/articles/?search=keyword` - Search articles by title or content 🔎
+- `GET /api/articles/?ordering=-created_at` - Sort articles by newest first 📊
+- `GET /api/articles/?title=example` - Filter articles by title 🔍
 
 ## Testing ✅
 Run the tests to ensure everything is working correctly:
